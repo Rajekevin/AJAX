@@ -1,0 +1,28 @@
+var myCat = {
+    "name" : "Moumou",
+    "specimen": "cat",
+    "favFood" : "Dog"
+}
+
+var myFavColor = ["blue", "green", "purple"];
+
+myFavColor[1];
+
+
+/*JSON
+* JAVASCRIPT
+* SCRIPT
+* OBJECT
+* NOTATION
+* */
+var thePets =[
+                {  "name" : "Moumou",
+                    "specimen": "cat",
+                    "favFood" : "Dog"},
+                {  "name" : "Borkie",
+                    "specimen": "dog",
+                    "favFood" : "cat"
+                }
+
+            ];
+
