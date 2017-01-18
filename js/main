@@ -16,13 +16,18 @@ myFavColor[1];
 * NOTATION
 * */
 var thePets =[
-                {  "name" : "Moumou",
+                {
+                    "name" : "Moumou",
                     "specimen": "cat",
-                    "favFood" : "Dog"},
-                {  "name" : "Borkie",
+                    "favFood" : "Dog"
+                },
+                {
+                    "name" : "Borkie",
                     "specimen": "dog",
                     "favFood" : "cat"
                 }
 
             ];
+
+thePets[1].favFood
 
