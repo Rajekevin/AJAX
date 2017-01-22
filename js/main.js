@@ -61,7 +61,28 @@ function renderHTML(data){
     var htmlString = "";
 
     for(i=0; i<data.length; i++){
-        htmlString += "<p>"+ data[i].name+ "is a " + data[i].species + ".</p>" ;
+        htmlString += "<p>"+ data[i].name+ " is a " + data[i].species +" that loves " +".</p>" ;
+
+        for(j=0; j<data[i].foods.likes.length; j++){
+
+           if(j==0){
+               htmlString += data[i].foods.likes[j];
+           }else{
+               htmlString += " and"+data[i].foods.likes[j];
+           }
+
+        }
+        htmlString += ' and dislikes';
+
+        for(j=0; j<data[i].foods.dislikes.length; j++) {
+
+            if (j == 0) {
+                htmlString += data[i].foods.dislikes[j];
+            } else {
+                htmlString += " and" + data[i].foods.dislikes[j];
+            }
+            htmlString += ".</p>";
+        }
     }
     animalContainer.insertAdjacentHTML("beforeend", htmlString);
 }
